@@ -48,11 +48,11 @@
                     <h5 data-aos='fade-right'>Contents</h5>
                     <div class="col-lg-8">
 
-                        <ul class='dashes' data-aos='fade-right'>
+                        <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
                             <li><a href='#softwaredev-devmethodology' class='custom-link' data-aos='fade-up'>- Development Methodologies</a></li>
                             <li><a href='#softwaredev-devanalysis' class='custom-link' data-aos='fade-up'>- Software Analysis</a></li>
                             <li><a href='#softwaredev-design' class='custom-link' data-aos='fade-up'>- Design</a></li>
-                            <li><a href='#softwaredev-' class='custom-link' data-aos='fade-up'>- Implementation</a></li>
+                            <li><a href='#softwaredev-implementation' class='custom-link' data-aos='fade-up'>- Implementation</a></li>
                             <li><a href='#softwaredev-' class='custom-link' data-aos='fade-up'>- Computational Constructs</a></li>
                             <li><a href='#softwaredev-' class='custom-link' data-aos='fade-up'>- Testing, Documentation & Evaluation</a></li>
                         </ul>
@@ -68,12 +68,13 @@
 
                     <div id='devmethodology-navbar'>
                         <div class="row">
-                        <div class="col-lg-8">
-                            <ul class='dashes' data-aos='fade-right'>
-                                <li><a href='#compthink' class='custom-link' data-aos='fade-right'>- Computational Thinking</a></li>
-                                <li><a href='#waterfall' class='custom-link' data-aos='fade-right'>- Waterfall Model</a></li>
-                            </ul>
-                        </div>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class="col-lg-8">
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#compthink' class='custom-link' data-aos='fade-right'>- Computational Thinking</a></li>
+                                    <li><a href='#waterfall' class='custom-link' data-aos='fade-right'>- Waterfall Model</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -166,9 +167,9 @@
             
                     <div id='devanalysis-navbar'>
                         <div class='row'>
-                            <h5 data-aos='fade-up' data-aos-delay='100'>Contents</h5>
+                            <h5 data-aos='fade-right'>Contents</h5>
                             <div class='col-lg-8' data-aos='fade-right'>
-                                <ul class='dashes'>
+                                <ul class='dashes' data-aos-delay='100'>
                                     <li><a href='#reqs' class='custom-link' data-aos='fade-right'>- User & Functional Requirements</a></li>
                                 </ul>
                             </div>
@@ -234,8 +235,7 @@
     print('Sum: ' + str(sumNum))
     print('Difference: ' + str(diffNum))
     print('Product: ' + str(prodNum))
-    print('Quotient: ' + str(quotNum))
-                                                        </code></pre>
+    print('Quotient: ' + str(quotNum))</code></pre>
                                                     </details>
                                                 </details>
                                             </li>
@@ -266,8 +266,7 @@
     elif gradeNum < 50 and gradeNum >= 40: 
         print('Student Achieved Grade D')
 
-    else: print('Student Failed')
-                                                        </code></pre>
+    else: print('Student Failed')</code></pre>
                                                     </details>
                                                 </details>
                                             </li>
@@ -300,9 +299,9 @@
             
                     <div id='design-navbar'>
                         <div class='row'>
-                            <h5 data-aos='fade-up' data-aos-delay='100'>Contents</h5>
+                            <h5 data-aos='fade-right'>Contents</h5>
                             <div class='col-lg-8'>
-                                <ul class='dashes' data-aos='fade-right'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
                                     <li><a href='#structdiagram' class='custom-link' data-aos='fade-right'>- Structure Diagrams</a></li>
                                     <li><a href='#flowchartdiagram' class='custom-link' data-aos='fade-right'>- Flowcharts</a></li>
                                     <li><a href='#pseudocode' class='custom-link' data-aos='fade-right'>- Pseudocode</a></li>
@@ -333,13 +332,14 @@
                                         <h4 id='structdiagram'>Structure Diagrams</h4>
 
                                         <p class='explain'>Breaking down a problem into smaller and smaller steps (subproblems) and is looked at from top down & left to right</p>
-                                        <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/struct-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
+                                        <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/struct-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
                                         
                                         <p class='explain'>Draw a structure diagram for the following problem</p>
+                                        <br>
 
                                         <details>
                                             <summary>"I want a program that takes in 3 football scores, works out the total goals scored & the average, then outputs a message with the total & average"</summary>
-                                            <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/q-struct-diagram.png" alt="Structure Diagram" style='width: 50%; height: 50%;'></div>
+                                            <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/q-struct-diagram.png" alt="Structure Diagram" style='width: 50%; height: 50%;'></div>
                                         </details>
 
                                         <hr>
@@ -348,43 +348,336 @@
 
                                         <p class='explain'>Represents a set of instructions including the flow of the program. It has specific symbols for set actions</p>
 
-                                        <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/flowchart-symbols.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
+                                        <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/flowchart-symbols.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
                                         <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/flowchart-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
 
                                         <hr>
 
                                         <h4 id='pseudocode'>Pseudocode</h4>
 
-                                        <p class='explain'>
-                                            Pseudocode uses english-like text to describe steps in a program e.g
-                                        </p>
+                                        <p class='explain'>Pseudocode uses english-like text to describe steps in a program e.g</p>
                                         <pre style='width: 30vw'><code class='lang-python'>INPUT "which is the best subject?"
 WHILE answer != "computing science" THEN:
     SEND "Try Again" TO DISPLAY
-SEND "Of Course It Is" TO DISPLAY
-                                        </code></pre>
+SEND "Of Course It Is" TO DISPLAY</code></pre>
 
                                         <hr>
 
                                         <h4 id='wireframe'>Wireframes</h4>
 
-                                        <p class='explain'>We don't need to talk too much about wireframes at this level but here is a graphic depiction of one</p>
+                                        <p class='explain'>A wireframe is a graphic design notation used to display how the ui of a program would look, including inputs, processes and outputs</p>
 
-                                        <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/wireframe-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
+                                        <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/wireframe-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
                                     </div>
                                 </div>
                             </div>
+
                             <div class='row gy-2'>
                                 <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
-                                        <h4>Design</h4>
-                                        
+                                        <h4>Practical Questions</h4>
+
+                                        <ul>
+                                            <li>Using a graphical design notation of your choice, write algorithms for the following problems</li>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary>"Calculate the circumference of a circle giving the radius as input (2πr)"</summary>
+                                                        <details>
+                                                            <summary>Pseudocode</summary>
+
+                                                            <pre style='width: 30vw'><code class='lang-python'>DECLARE pi INITIALLY 3.14
+SEND "Enter Radius: " TO SCREEN
+DECLARE radius INITIALLY KEYBOARD INPUT 
+DECLARE circumference INITIALLY 2*pi*radius
+SEND circumference TO SCREEN</code></pre>
+
+                                                        </details>
+
+                                                        <details>
+                                                            <summary>Code</summary>
+                                                            <pre style='width: 30vw'><code class='lang-python'>pi = 3.14
+radius = float(input('Enter Radius of Circle: '))
+circumference = 2*pi*radius
+print(circumference)</code></pre>
+                                                        </details>
+                                                    </details>
+                                                </li>
+                                                <li>
+                                                    <details>
+                                                        <summary>"A quiz with 4 questions and a 2nd chance to get the correct answer after a hint is given"</summary>
+                                                        <details>
+                                                            <summary>Pseudocode</summary>
+                                                            <pre style='width: 30vw'><code class='lang-python'>SEND "Question 1: What's 5 + 5: " TO SCREEN
+DECLARE qOneAns INITIALLY KEYBOARD INPUT
+IF qOneAns != 10 THEN
+    SEND "Wrong, hint: 5+5 is the same as 15-5: " TO SCREEN
+    SET qOneAns AS KEYBOARD INPUT
+    IF qOneAns != 10:
+        SEND "Wrong again, try next question"
+
+SEND "Question 2: What's 10 - 5: " TO SCREEN
+DECLARE qTwoAns INITIALLY KEYBOARD INPUT
+IF qTwoAns != 5 THEN
+    SEND "Wrong, hint: 10-5 is the same as 2+3: " TO SCREEN
+    SET qTwoAns AS KEYBOARD INPUT
+    IF qTwoAns != 5:
+        SEND "Wrong again, try next question"
+
+SEND "Question 3: What's 5 - 3: " TO SCREEN
+DECLARE qThreeAns INITIALLY KEYBOARD INPUT
+IF qThreeAns != 2 THEN
+    SEND "Wrong, hint: 5-3 is the same as 1+1: " TO SCREEN
+    SET qThreeAns AS KEYBOARD INPUT
+    IF qThreeAns != 2:
+        SEND "Wrong again, try next question"
+
+SEND "Question 4: What's 10 - 7: " TO SCREEN
+DECLARE qFourAns INITIALLY KEYBOARD INPUT
+IF qFourAns != 3 THEN
+    SEND "Wrong, hint: 10-7 is the same as 2+1: " TO SCREEN
+    SET qFourAns AS KEYBOARD INPUT
+    IF qFourAns != 3:
+        SEND "Wrong again"</code></pre>
+                                                        </details>
+                                                        <details>
+                                                            <summary>Code</summary>
+                                                            <pre style='width: 30vw'><code class='lang-python'>qOneAns = input('Question 1: What\'s 5+5: ')
+if qOneAns != 10:
+    qOneAns = input('Wrong, hint: 5+5 is the same as 15-5: ')
+    if qOneAns != 10: print('Wrong, try another question')
+
+qTwoAns = input('Question 1: What\'s 10-5: ')
+if qTwoAns != 5:
+    qTwoAns = input('Wrong, hint: 10-5 is the same as 10-5: ')
+    if qTwoAns != 5: print('Wrong, try another question')
+
+qThreeAns = input('Question 1: What\'s 5-3: ')
+if qThreeAns != 2:
+    qThreeAns = input('Wrong, hint: 5-3 is the same as 1+1: ')
+    if qThreeAns != 2: print('Wrong, try another question')
+
+qFourAns = input('Question 1: What\'s 10-7: ')
+if qFourAns != 3:
+    qFourAns = input('Wrong, hint: 10-7 is the same as 2+1: ')
+    if qFourAns != 3: print('Wrong, try another question')
+                                                            </code></pre>
+                                                        </details>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                            <li>Investigate online tools for creating design notations. For <a href='https://cacoo.com' class='custom-link'>Example</a></li>
+                                            <li>Create programs to solve each of the problems above, using a programming language of your choice</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <hr>
+
+                <div id='softwaredev-implementation'>
+                    <h3 data-aos='fade-up'>Design</h3>
+            
+                    <div id='implementation-navbar'>
+                        <div class='row'>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class='col-lg-8'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#datastruct' class='custom-link' data-aos='fade-right'>- Data Structures</a></li>
+                                    <li><a href='#compconstruct' class='custom-link' data-aos='fade-right'>- Computational Constructs</a></li>
+                                    <li><a href='#controlstruct' class='custom-link' data-aos='fade-right'>- Control Structures</a></li>
+                                    <li><a href='#predfunc' class='custom-link' data-aos='fade-right'>- Predefined Functions</a></li>
+                                    <li><a href='algo' class='custom-link' data-aos='fade-right'>- Standard Algorithms</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div id='datastruct'>
+                        <div class='row gy-5'>
+                            <div class='row gy-4'>
+                                <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
+                                    <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                        <h4>Implementation</h4>
+                                        
+                                        <p class='explain'>
+                                            The implementation stage is the stage at which you actually code your designed solution.
+                                            Below are some data types used in computing
+                                        </p>
+
+                                        <ul>
+                                            <li>Character - A symbol, letter or number, e.g 'J'</li>
+                                            <li>String - A list of characters, e.g 'Hello'</li>
+                                            <li>Integer - A whole number, e.g 3</li>
+                                            <li>Float/Real Number - A decimal number, e.g 3.14</li>
+                                            <li>Boolean - Either True or False</li>
+                                        </ul>
+
+                                        <h4>Data Structures</h4>
+
+                                        <p class='explain'>An array is a variable that can hold multiple values of one data type, e.g <code class='lang-python'>names = ['Ewan', 'Mark', 'Graham', 'Ava']</code></p>
+                                        <p class='explain'>An array always starts at index 0 and goes up from there, e.g <code class='lang-python'>names[0] = 'Ewan'</code></p>
+
+                                        <hr>
+
+                                        <h4 id='compconstruct'>Computational Constructs</h4>
+
+                                        <p class='explain'>
+                                            Computational Constructs - the building blocks of a programming language used to create a program. 
+                                            Some examples are: if-else, while, for, try-except. The special name for giving a value to a variable is called assignment
+                                        </p>
+
+                                        <p class='explain'>
+                                            Arithmetic Operations - A process that is carried out on an item of data, e.g +,-,/,*. 
+                                            <code class='lang-python'>age += 1, ageDiff = ageOne - ageTwo</code> etc
+                                        </p>
+
+                                        <p class='explain'>
+                                            String Concatenation - The joining of 2 strings into 1, e.g <code class='lang-python'>firstName = 'Ewan', secondName = 'Travers', name = firstName + ' ' + lastName</code>
+                                        </p>
+
+
+
+                                        <p class='explain'>
+                                            Relational Operators
+                                            <ul>
+                                                <li>Equals - =</li>
+                                                <li>Compared To - ==</li>
+                                                <li>Greater Than - ></li>
+                                                <li>Less Than - <</li>
+                                                <li>Greater Than or Equal To - =></li>
+                                                <li>Less Than or Equal To - <=</li>
+                                                <li>Not Equal To - !=</li>
+                                            </ul>
+                                        </p>
+
+                                        <p class='explain'>
+                                            Logical Operators:
+                                            <ul>
+                                                <li>AND - Both conditions must be true for the output to be true</li>
+                                                <li>OR - Only one condition must be true for the output to be true</li>
+                                                <li>NOT - Condition must be false for the output to be true</li>
+                                            </ul>
+                                        </p>
+
+                                        <p class='explain'>
+                                            Conditional Statements
+                                            <ul>
+                                                <li>Simple Conditional Statement - <code class='lang-python'>if age > 18: // do something</code></li>
+                                                <li>Complex Conditional Statement - <code class='lang-python'>if age < 18 and age < 35: // do something</code></li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='row gy-2'>
+                                <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
+                                    <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                        <h4>Questions</h4>
+                                        
+                                        <p class='explain'>
+                                            <ul>
+                                                <li>What does assignment do</li>
+                                                <li>Write assignment statements for your name and age using a programming language of your choice</li>
+                                                <li>Name 2 operations used in programming languages</li>
+                                                <li>Which type of operations produce an answer of true or false</li>
+                                                <li>What is concatenation</li>
+                                                <li>State 2 relational operators</li>
+                                                <li>Which type of operation uses NOT</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='row gy-2'>
+                                <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
+                                    <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                        <h4 id='controlstruct'>Control Structures</h4>
+
+                                        <p class='explain'>Control Structures control the other that lines of code are evaluated in.</p>
+                                        <p class='explain'>
+                                            <ul>
+                                                <li>Fixed Loop - Loop code a predetermined number of times, e.g <code class='lang-python'>for i in range(4): // Do something</code></li>
+                                                <li>Conditional Loop - Only loops as long as the condition is true, e.g <code class='lang-python'>while pWord != 'password': // do something</code></li>
+                                            </ul>
+                                        </p>
+
+                                        <hr>
+
+                                        <h4 id='predfunc'>Predefined Functions</h4>
+
+                                        <p class='explain'>Predefined Functions is code that has already been written & performs an action, <b>returning</b> a value</p>
+                                        <p class='explain'>Procedures is code that has already been written and performs an action, <b>not</b> returning a value</p>
+                                        <p class='explain'>Procedures & functions are both examples of subprograms. They perform task(s) as part of a larger program</p>
+                                        <p class='explain'>Both procedures & functions sometimes require parameters, this is data that the subprogram requires in order to function</p>
+                                        <p class='explain'>
+                                            Some Examples
+                                            <ul>
+                                                <li>len (length) - Returns the number of characters in a string or items in an array</li>
+                                                <li>round - Rounds a number to a specific number of decimal places</li>
+                                                <li>random - Chooses a random element from a list</li>
+                                                <li>range - chooses a random element within a specified range</li>
+                                            </ul>
+                                        </p>
+
+                                        <hr>
+
+                                        <h4 id='algo'>Standard Algorithms</h4>
+
+                                        <p class="explain">A standard algorithm is a programmable 'recipe' for doing certain tasks</p>
+                                        <p class="explain">At beginner level, these are
+                                            <ul>
+                                                <li>Input Validation</li>
+                                                <li>Running Total within a loop</li>
+                                                <li>Traversing a 1D Array</li>
+                                            </ul>
+                                        </p>
+
+                                        <p class="explain">Input Validation - Making sure the Input given is acceptable</p>
+                                        <pre style='width: 30vw'><code class='lang-python'>grade = int(input('Enter Percentage: '))
+while grade < 0 or grade > 100: 
+    grade = int(input('Error - Enter Percentage: '))</code></pre>
+
+                                        <p class="explain">Running Total within a loop - How far the loop has gone through</p>
+                                        <pre style="width: 30vw"><code class="lang-python">total = 0
+points = [1,2,3,4,5,6]
+
+for i in range(len(points)):
+    total += points[i]
+
+print(total)</code></pre>
+
+                                        <p class="explain">Traversing a 1D Array - Running through all values in an array</p>
+                                        <pre style='width: 30vw'><code class='lang-python'>array = ["one", "two", "three", "four"]
+for i in range(len(array)):
+    print(giant[i])</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class='row gy-2'>
+                                <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
+                                    <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                        <h4>Questions</h4>
+
+                                        <p class="explain">
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
