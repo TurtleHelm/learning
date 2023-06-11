@@ -21,7 +21,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container flex-lg-column">
-        <a class="navbar-brand mb-lg-4 mx-lg-auto" href="turtlehelm.github.io"><span class='h5 fw-bold'>Helm Edu</span></a>
+        <a class="navbar-brand mb-lg-4 mx-lg-auto" href="https://turtlehelm.github.io"><span class='h5 fw-bold'>Helm Edu</span></a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,15 +29,15 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-            <li class="nav-item"><a class="nav-link" href="#softwaredev">Software Development</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#softwaredev">Software Development</a></li>
             <li class="nav-item"><a class="nav-link" href="#webdev">Web Design</a></li>
-            <li class="nav-item"><a class="nav-link disabled" href="#database">Databases</a></li>
+            <li class="nav-item"><a class="nav-link" href="#compsys">Computer Systems</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div id="content-wrapper">
+    <main id="content-wrapper">
 
         <section id='softwaredev' class='full-height'>
             <div class="container">
@@ -53,8 +53,7 @@
                             <li><a href='#softwaredev-devanalysis' class='custom-link' data-aos='fade-up'>- Software Analysis</a></li>
                             <li><a href='#softwaredev-design' class='custom-link' data-aos='fade-up'>- Design</a></li>
                             <li><a href='#softwaredev-implementation' class='custom-link' data-aos='fade-up'>- Implementation</a></li>
-                            <li><a href='#softwaredev-' class='custom-link' data-aos='fade-up'>- Computational Constructs</a></li>
-                            <li><a href='#softwaredev-' class='custom-link' data-aos='fade-up'>- Testing, Documentation & Evaluation</a></li>
+                            <li><a href='#softwaredev-test-doc-eval' class='custom-link' data-aos='fade-up'>- Testing, Documentation & Evaluation</a></li>
                         </ul>
                     </div>
                     </div>
@@ -63,9 +62,9 @@
                 <hr>
 
                 <div id='softwaredev-devmethodology'>
-
+                
                     <h3 data-aos='fade-up' id='softwaredev-datastruct'>Development Methodologies</h3>
-
+                
                     <div id='devmethodology-navbar'>
                         <div class="row">
                             <h5 data-aos='fade-right'>Contents</h5>
@@ -77,87 +76,107 @@
                             </div>
                         </div>
                     </div>
-
+                
                     <hr>
-
+                
                     <div id='compthink'>
                         <div class="row gy-5">
-
-                        <div class="row gy-4">
-
-                            <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
-                            <div class="bg-base p-4 rounded-4 shadow-effect">
-                                <h4>Computational Thinking</h4>
-                                <p class='explain'>
-                                    Computational thinking is the act of designing a solution to a problem so it can be solved by a computer. 
-                                    Below are the steps in which you can solve a problem using computational thinking
-                                </p>
-
-                                <ul>
-                                    <li>Analysis - Understanding the problem</li>
-                                    <li>Design - Work out steps to solve said problem</li>
-                                    <li>Implementation - Create a working program based on the design</li>
-                                    <li>Testing - Making sure your solution fits all use cases</li>
-                                    <li>Documentation - Describe how your solution works and how to use it</li>
-                                    <li>Evaluation - Checking to see if your solution covers all points made in the original request</li>
-                                </ul>
-
-                                <hr>
-
-                                <h4 class='' id='waterfall'>Waterfall Model</h4>
-
-                                <p class='explain'>
-                                    The Waterfall Model is an <span class='text-brand'>Iterative Development Methodology</span>
-                                    meaning that previous stages can be revisited and improved on, there are often multiple cycles
-                                    before a solution that fits all use cases is found.
-                                </p>
-                                <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/waterfall-model.png" alt="Waterfall Model Diagram" style='width: 30%; height: 30%;'></div>
-
-                                <p class='explain'>There are some advantages to the waterfall model</p>
-                                <ul>
-                                    <li>Its simple to understand and use</li>
-                                    <li>You move from one stage to the next stage</li>
-                                    <li>This methodology is ideal for smaller projects</li>
-                                </ul>
+                
+                            <div class="row gy-4">
+                
+                                <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                
+                                        <p class='explain'>
+                
+                                            <h4>Computational Thinking</h4>
+                    
+                                            Computational thinking is the act of designing a solution to a problem so it can be solved by a
+                                            computer. Below are the steps in which you can solve a problem using computational thinking
+                    
+                                            <ul>
+                                                <li>Analysis - Understanding the problem</li>
+                                                <li>Design - Work out steps to solve said problem</li>
+                                                <li>Implementation - Create a working program based on the design</li>
+                                                <li>Testing - Making sure your solution fits all use cases</li>
+                                                <li>Documentation - Describe how your solution works and how to use it</li>
+                                                <li>Evaluation - Checking to see if your solution covers all points made in the original
+                                                    request</li>
+                                            </ul>
+                    
+                                            <h4 id='waterfall'>Waterfall Model</h4>
+                    
+                                            The Waterfall Model is an <span class='text-brand'>Iterative Development Methodology</span>
+                                            meaning that previous stages can be revisited and improved on, there are often multiple cycles
+                                            before a solution that fits all use cases is found.
+                    
+                                            <div class="custom-card-image rounded-4">
+                                                <img class='rounded-4' src="./resources/waterfall-model.png" alt="Waterfall Model Diagram" style='width: 30%; height: 30%;'>
+                                            </div>
+                    
+                                            <hr>
+                    
+                                            There are some advantages to the waterfall model
+                    
+                                            <ul>
+                                                <li>Its simple to understand and use</li>
+                                                <li>You move from one stage to the next stage</li>
+                                                <li>This methodology is ideal for smaller projects</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                
+                            <div class='row'>
+                                <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                
+                                        <p class='explain'>
+                
+                                            <h3 class='text-center'>Summary</h3>
+                
+                                            <ul>
+                                                <li>Algorithm - An Algorithm is a set of instructions used to solve a problem, e.g making a
+                                                    cup of coffee</li>
+                                                <li>Computational Thinking - Computational Thinking is the act of designing a solution so it
+                                                    can be solved by a computer</li>
+                                                <ul>
+                                                    <li>The stages of computational thinking are - analysis, design, implementation,
+                                                        testing, documentation & evaluation</li>
+                                                </ul>
+                                                <li>Waterfall Model - an iterative development methodology that's ideal for small projects
+                                                </li>
+                                            </ul>
+                    
+                                            <h3 class='text-center'>Try some of the questions below</h3>
+                
+                                            <ol>
+                                                <li>What is Computational Thinking</li>
+                                                <li>What is an algorithm</li>
+                                                <li>State the terms for the below sentences</li>
+                                                <ul>
+                                                    <li>Changing a design into a program</li>
+                                                    <li>Looking at and understanding the problem</li>
+                                                    <li>Describing what each part of the program does</li>
+                                                    <li>Working out a series of steps to solve a problem</li>
+                                                    <li>Checking whether the program contains mistakes</li>
+                                                    <li>Ensuring that the software fits all of the original requirements</li>
+                                                </ul>
+                                                <li>Write an algorithm for making a cup of tea</li>
+                                            </ol>
+                    
+                                            Use the previous paragraphs to check your answers
+                                        </p>
+                
+                                    </div>
+                                </div>
                             </div>
+                
                         </div>
-
-                        <div class='row'>
-                            <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
-                            <div class="bg-base p-4 rounded-4 shadow-effect">
-                                <h3 class='text-center'>Summary</h3>
-                                <ul>
-                                    <li>Algorithm - An Algorithm is a set of instructions used to solve a problem, e.g making a cup of coffee</li>
-                                    <li>Computational Thinking - Computational Thinking is the act of designing a solution so it can be solved by a computer</li>
-                                    <ul><li>The stages of computational thinking are - analysis, design, implementation, testing, documentation & evaluation</li></ul>
-                                    <li>Waterfall Model - an iterative development methodology that's ideal for small projects</li>
-                                </ul>
-
-                                <h3 class='text-center'>Try some of the questions below</h3>
-                                <ol>
-                                    <li>What is Computational Thinking</li>
-                                    <li>What is an algorithm</li>
-                                    <li>State the terms for the below sentences</li>
-                                    <ul>
-                                        <li>Changing a design into a program</li>
-                                        <li>Looking at and understanding the problem</li>
-                                        <li>Describing what each part of the program does</li>
-                                        <li>Working out a series of steps to solve a problem</li>
-                                        <li>Checking whether the program contains mistakes</li>
-                                        <li>Ensuring that the software fits all of the original requirements</li>
-                                    </ul>
-                                    <li>Write an algorithm for making a cup of tea</li>
-                                </ol>
-                                
-                                <p class='explain'>Use the previous paragraphs to check your answers</p>
-                            </div>
-                            </div>
-                        </div>
-
-                        </div>
+                
+                
                     </div>
-
                 </div>
 
                 <hr>
@@ -183,106 +202,105 @@
                             <div class='row gy-4'>
                                 <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
-                                        <h4>Analysis</h4>
+
                                         <p class='explain'>
+
+                                            <h4>Analysis</h4>
+
                                             Analysis is the stage at which you look at and understand the problem you're facing, this is also the stage you would meet the client.
                                             At the end of the analysis stage, a software specification is produced. See <a href='https://tinyurl.com/examplespec' class='custom-link'>here</a> for an example specification.
-                                        </p>
 
-                                        <hr>
+                                            <h4>User & Functional Requirements</h4>
 
-                                        <h4>User & Functional Requirements</h4>
-                                        <p class='explain'>
                                             In a Specification, you need to be able to identify inputs, processes and outputs for each part of the solution. Example Question Below
-                                        </p>
 
-                                        <ul>
-                                            <li>
-                                                <details>
-                                                    <summary>"I want a program that takes in a person's name and age, works out the year they were born and tells them"</summary>
-                                                    <p class='explain'>- Input(s): user name & age</p>
-                                                    <p class='explain'>- Process(es): work out user birth year</p>
-                                                    <p class='explain'>- Output(s): users birth year</p>
-                                                </details>
-                                            </li>
-                                        </ul>
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary>"I want a program that takes in a person's name and age, works out the year they were born and tells them"</summary>
+                                                        <p class='explain'>- Input(s): user name & age</p>
+                                                        <p class='explain'>- Process(es): work out user birth year</p>
+                                                        <p class='explain'>- Output(s): users birth year</p>
+                                                    </details>
+                                                </li>
+                                            </ul>
 
-                                        <p class='explain'>
                                             Try the below questions, identifying the inputs, outputs and processes for each. For an extra challenge you can try coding a program for the 1st & 2nd problem
+
+                                            <ul>
+                                                <li>
+                                                    <details>
+                                                        <summary>
+                                                            "A program is to be written to simulate the basic arithmetic functions of a calculator. The user should be asked to input 
+                                                            two numbers and the sum (+), difference (-), product (*) and quotient (/) should be displayed"
+                                                        </summary>
+                                                        <p class='explain'>- Input(s): 2 numbers</p>
+                                                        <p class='explain'>- Process(es): Calculate the sum, difference, product & quotient of the 2 numbers</p>
+                                                        <p class='explain'>- Output(s): sum, difference, product & quotient of the 2 numbers</p>
+    
+                                                        <details>
+                                                            <summary>Code</summary>
+                                                            <pre style='width: 30vw'><code class='lang-python'>numOne = int(input('Enter a Number: ''))
+numTwo = int(input('Enter Another Number: '))
+
+sumNum = numOne + numTwo
+diffNum = numOne - numTwo
+prodNum = numOne * numTwo
+quotNum = numOne / numTwo
+
+print('Sum: ' + str(sumNum))
+print('Difference: ' + str(diffNum))
+print('Product: ' + str(prodNum))
+print('Quotient: ' + str(quotNum))</code></pre>
+                                                        </details>
+                                                    </details>
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    <details>
+                                                        <summary>
+                                                            "A school needs a program to grade students' marks after an exam. The program should take in an integer between 0 and 100 and output a grade"
+                                                        </summary>
+                                                        <p class='explain'>- Input(s): an integer between 0 and 100</p>
+                                                        <p class='explain'>- Process(es): Find the students grade</p>
+                                                        <p class='explain'>- Output(s): The students grade</p>
+    
+                                                        <details>
+                                                            <summary>Code</summary>
+                                                            <pre style='width: 30vw'><code class='lang-python'>gradeNum = int(input('Enter Number: '))
+while gradeNum < 0 or gradeNum > 100:
+    print('Error, number is <0 or >100')
+    gradeNum = int(input('Enter Number: '))
+
+if gradeNum >= 70: print('Student Achieved Grade A')
+elif gradeNum < 70 and gradeNum >= 60: 
+    print('Student Achieved Grade B')
+
+elif gradeNum < 60 and gradeNum >= 50: 
+    print('Student Achieved Grade C')
+
+elif gradeNum < 50 and gradeNum >= 40: 
+    print('Student Achieved Grade D')
+
+else: print('Student Failed')</code></pre>
+                                                        </details>
+                                                    </details>
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    <details>
+                                                        <summary>
+                                                            "A program is needed to calculate the speed at which an arrow is traveling at. It measures the time it takes the arrow to travel a 
+                                                            marked distance between 2 sensors and calculates the speed of the arrow. The program should show the speed at which the arrow is traveling."
+                                                        </summary>
+                                                        <p class='explain'>- Input(s): the time it takes the arrow to travel between 2 sensors, distance between sensors</p>
+                                                        <p class='explain'>- Process(es): How fast the arrow traveled</p>
+                                                        <p class='explain'>- Output(s): Speed of the arrow</p>
+                                                    </details>
+                                                </li>
+                                            </ul>
+
                                         </p>
-
-                                        <ul>
-                                            <li>
-                                                <details>
-                                                    <summary>
-                                                        "A program is to be written to simulate the basic arithmetic functions of a calculator. The user should be asked to input 
-                                                        two numbers and the sum (+), difference (-), product (*) and quotient (/) should be displayed"
-                                                    </summary>
-                                                    <p class='explain'>- Input(s): 2 numbers</p>
-                                                    <p class='explain'>- Process(es): Calculate the sum, difference, product & quotient of the 2 numbers</p>
-                                                    <p class='explain'>- Output(s): sum, difference, product & quotient of the 2 numbers</p>
-
-                                                    <details>
-                                                        <summary>Code</summary>
-                                                        <pre style='width: 30vw'><code class='lang-python'>numOne = int(input('Enter a Number: ''))
-    numTwo = int(input('Enter Another Number: '))
-
-    sumNum = numOne + numTwo
-    diffNum = numOne - numTwo
-    prodNum = numOne * numTwo
-    quotNum = numOne / numTwo
-
-    print('Sum: ' + str(sumNum))
-    print('Difference: ' + str(diffNum))
-    print('Product: ' + str(prodNum))
-    print('Quotient: ' + str(quotNum))</code></pre>
-                                                    </details>
-                                                </details>
-                                            </li>
-                                            <br>
-                                            <li>
-                                                <details>
-                                                    <summary>
-                                                        "A school needs a program to grade students' marks after an exam. The program should take in an integer between 0 and 100 and output a grade"
-                                                    </summary>
-                                                    <p class='explain'>- Input(s): an integer between 0 and 100</p>
-                                                    <p class='explain'>- Process(es): Find the students grade</p>
-                                                    <p class='explain'>- Output(s): The students grade</p>
-
-                                                    <details>
-                                                        <summary>Code</summary>
-                                                        <pre style='width: 30vw'><code class='lang-python'>gradeNum = int(input('Enter Number: '))
-    while gradeNum < 0 or gradeNum > 100:
-        print('Error, number is <0 or >100')
-        gradeNum = int(input('Enter Number: '))
-
-    if gradeNum >= 70: print('Student Achieved Grade A')
-    elif gradeNum < 70 and gradeNum >= 60: 
-        print('Student Achieved Grade B')
-
-    elif gradeNum < 60 and gradeNum >= 50: 
-        print('Student Achieved Grade C')
-
-    elif gradeNum < 50 and gradeNum >= 40: 
-        print('Student Achieved Grade D')
-
-    else: print('Student Failed')</code></pre>
-                                                    </details>
-                                                </details>
-                                            </li>
-                                            <br>
-                                            <li>
-                                                <details>
-                                                    <summary>
-                                                        "A program is needed to calculate the speed at which an arrow is traveling at. It measures the time it takes the arrow to travel a 
-                                                        marked distance between 2 sensors and calculates the speed of the arrow. The program should show the speed at which the arrow is traveling."
-                                                    </summary>
-                                                    <p class='explain'>- Input(s): the time it takes the arrow to travel between 2 sensors, distance between sensors</p>
-                                                    <p class='explain'>- Process(es): How fast the arrow traveled</p>
-                                                    <p class='explain'>- Output(s): Speed of the arrow</p>
-                                                </details>
-                                            </li>
-                                        </ul>
 
                                     </div>
                                 </div>
@@ -320,54 +338,59 @@
                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
                                         <h4>Design</h4>
                                         
-                                        <p class='explain'>Design Notation are ways of representing a program or algorithm. There are 2 types at this level</p>
+                                        <p class='explain'>
+                                            Design Notation are ways of representing a program or algorithm. There are 2 types at this level
+                                            <ul>
+                                                <li>Graphical Design Notation - Uses shapes to describe a design (Structure Diagrams & Flowcharts)</li>
+                                                <li>Pseudocode - Uses Ordinary English to Define steps in a problem</li>
+                                            </ul>
 
-                                        <ul>
-                                            <li>Graphical Design Notation - Uses shapes to describe a design (Structure Diagrams & Flowcharts)</li>
-                                            <li>Pseudocode - Uses Ordinary English to Define steps in a problem</li>
-                                        </ul>
+                                            <hr>
 
-                                        <hr>
+                                            <h4 id='structdiagram'>Structure Diagrams</h4>
 
-                                        <h4 id='structdiagram'>Structure Diagrams</h4>
+                                            Breaking down a problem into smaller and smaller steps (subproblems) and is looked at from top down & left to right
 
-                                        <p class='explain'>Breaking down a problem into smaller and smaller steps (subproblems) and is looked at from top down & left to right</p>
-                                        <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/struct-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
-                                        
-                                        <p class='explain'>Draw a structure diagram for the following problem</p>
-                                        <br>
+                                            <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/struct-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
 
-                                        <details>
-                                            <summary>"I want a program that takes in 3 football scores, works out the total goals scored & the average, then outputs a message with the total & average"</summary>
-                                            <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/q-struct-diagram.png" alt="Structure Diagram" style='width: 50%; height: 50%;'></div>
-                                        </details>
+                                            Draw a structure diagram for the following problem
 
-                                        <hr>
+                                            <br>
 
-                                        <h4 id='flowchartdiagram'>Flowcharts</h4>
+                                            <details>
+                                                <summary>"I want a program that takes in 3 football scores, works out the total goals scored & the average, then outputs a message with the total & average"</summary>
+                                                <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/q-struct-diagram.png" alt="Structure Diagram" style='width: 50%; height: 50%;'></div>
+                                            </details>
 
-                                        <p class='explain'>Represents a set of instructions including the flow of the program. It has specific symbols for set actions</p>
+                                            <hr>
 
-                                        <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/flowchart-symbols.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
-                                        <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/flowchart-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
+                                            <h4 id='flowchartdiagram'>Flowcharts</h4>
 
-                                        <hr>
 
-                                        <h4 id='pseudocode'>Pseudocode</h4>
+                                            Represents a set of instructions including the flow of the program. It has specific symbols for set actions
 
-                                        <p class='explain'>Pseudocode uses english-like text to describe steps in a program e.g</p>
-                                        <pre style='width: 30vw'><code class='lang-python'>INPUT "which is the best subject?"
+                                            <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/flowchart-symbols.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
+                                            <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/flowchart-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
+
+                                            <hr>
+
+                                            <h4 id='pseudocode'>Pseudocode</h4>
+
+                                            Pseudocode uses english-like text to describe steps in a program e.g
+                                            <pre style='width: 30vw'><code class='lang-python'>INPUT "which is the best subject?"
 WHILE answer != "computing science" THEN:
     SEND "Try Again" TO DISPLAY
 SEND "Of Course It Is" TO DISPLAY</code></pre>
 
-                                        <hr>
+                                            <hr>
 
-                                        <h4 id='wireframe'>Wireframes</h4>
+                                            <h4 id='wireframe'>Wireframes</h4>
 
-                                        <p class='explain'>A wireframe is a graphic design notation used to display how the ui of a program would look, including inputs, processes and outputs</p>
+                                            A wireframe is a graphic design notation used to display how the ui of a program would look, including inputs, processes and outputs
+    
+                                            <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/wireframe-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
+                                        </p>
 
-                                        <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/wireframe-diagram.png" alt="Structure Diagram" style='width: 30%; height: 30%;'></div>
                                     </div>
                                 </div>
                             </div>
@@ -490,7 +513,7 @@ if qFourAns != 3:
                                     <li><a href='#compconstruct' class='custom-link' data-aos='fade-right'>- Computational Constructs</a></li>
                                     <li><a href='#controlstruct' class='custom-link' data-aos='fade-right'>- Control Structures</a></li>
                                     <li><a href='#predfunc' class='custom-link' data-aos='fade-right'>- Predefined Functions</a></li>
-                                    <li><a href='algo' class='custom-link' data-aos='fade-right'>- Standard Algorithms</a></li>
+                                    <li><a href='#algo' class='custom-link' data-aos='fade-right'>- Standard Algorithms</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -503,47 +526,48 @@ if qFourAns != 3:
                             <div class='row gy-4'>
                                 <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
-                                        <h4>Implementation</h4>
-                                        
+
                                         <p class='explain'>
+
+                                            <h4>Implementation</h4>
+
                                             The implementation stage is the stage at which you actually code your designed solution.
-                                            Below are some data types used in computing
-                                        </p>
+                                            Below are some data types used in computing.
 
-                                        <ul>
-                                            <li>Character - A symbol, letter or number, e.g 'J'</li>
-                                            <li>String - A list of characters, e.g 'Hello'</li>
-                                            <li>Integer - A whole number, e.g 3</li>
-                                            <li>Float/Real Number - A decimal number, e.g 3.14</li>
-                                            <li>Boolean - Either True or False</li>
-                                        </ul>
+                                            <ul>
+                                                <li>Character - A symbol, letter or number, e.g 'J'</li>
+                                                <li>String - A list of characters, e.g 'Hello'</li>
+                                                <li>Integer - A whole number, e.g 3</li>
+                                                <li>Float/Real Number - A decimal number, e.g 3.14</li>
+                                                <li>Boolean - Either True or False</li>
+                                            </ul>
 
-                                        <h4>Data Structures</h4>
+                                            <h4>Data Structures</h4>
 
-                                        <p class='explain'>An array is a variable that can hold multiple values of one data type, e.g <code class='lang-python'>names = ['Ewan', 'Mark', 'Graham', 'Ava']</code></p>
-                                        <p class='explain'>An array always starts at index 0 and goes up from there, e.g <code class='lang-python'>names[0] = 'Ewan'</code></p>
+                                            An array is a variable that can hold multiple values of one data type, e.g <code class='lang-python'>names = ['Ewan', 'Mark', 'Graham', 'Ava']</code>
+                                            <br>
+                                            An array always starts at index 0 and goes up from there, e.g <code class='lang-python'>names[0] = 'Ewan'</code>
 
-                                        <hr>
+                                            <hr>
 
-                                        <h4 id='compconstruct'>Computational Constructs</h4>
+                                            <h4 id='compconstruct'>Computational Constructs</h4>
 
-                                        <p class='explain'>
                                             Computational Constructs - the building blocks of a programming language used to create a program. 
                                             Some examples are: if-else, while, for, try-except. The special name for giving a value to a variable is called assignment
-                                        </p>
 
-                                        <p class='explain'>
-                                            Arithmetic Operations - A process that is carried out on an item of data, e.g +,-,/,*. 
-                                            <code class='lang-python'>age += 1, ageDiff = ageOne - ageTwo</code> etc
-                                        </p>
+                                            <br>
 
-                                        <p class='explain'>
-                                            String Concatenation - The joining of 2 strings into 1, e.g <code class='lang-python'>firstName = 'Ewan', secondName = 'Travers', name = firstName + ' ' + lastName</code>
-                                        </p>
+                                            <ul>
+                                                <li>
+                                                    Arithmetic Operations - A process that is carried out on an item of data, e.g +,-,/,*. 
+                                                    <code class='lang-python'>age += 1, ageDiff = ageOne - ageTwo</code> etc
+                                                </li>
+                                                <li>
+                                                    String Concatenation - The joining of 2 strings into 1, e.g 
+                                                    <code class='lang-python'>firstName = 'Ewan', secondName = 'Travers', name = firstName + ' ' + lastName</code>
+                                                </li>
+                                            </ul>
 
-
-
-                                        <p class='explain'>
                                             Relational Operators
                                             <ul>
                                                 <li>Equals - =</li>
@@ -554,24 +578,21 @@ if qFourAns != 3:
                                                 <li>Less Than or Equal To - <=</li>
                                                 <li>Not Equal To - !=</li>
                                             </ul>
-                                        </p>
 
-                                        <p class='explain'>
                                             Logical Operators:
                                             <ul>
                                                 <li>AND - Both conditions must be true for the output to be true</li>
                                                 <li>OR - Only one condition must be true for the output to be true</li>
                                                 <li>NOT - Condition must be false for the output to be true</li>
                                             </ul>
-                                        </p>
 
-                                        <p class='explain'>
                                             Conditional Statements
                                             <ul>
-                                                <li>Simple Conditional Statement - <code class='lang-python'>if age > 18: // do something</code></li>
-                                                <li>Complex Conditional Statement - <code class='lang-python'>if age < 18 and age < 35: // do something</code></li>
+                                                <li>Simple Conditional Statement - <code class='lang-python'>if age > 18: # do something</code></li>
+                                                <li>Complex Conditional Statement - <code class='lang-python'>if age < 18 and age < 35: # do something</code></li>
                                             </ul>
                                         </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -579,9 +600,11 @@ if qFourAns != 3:
                             <div class='row gy-2'>
                                 <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
-                                        <h4>Questions</h4>
                                         
                                         <p class='explain'>
+
+                                            <h4>Questions</h4>
+
                                             <ul>
                                                 <li>What does assignment do</li>
                                                 <li>Write assignment statements for your name and age using a programming language of your choice</li>
@@ -592,6 +615,7 @@ if qFourAns != 3:
                                                 <li>Which type of operation uses NOT</li>
                                             </ul>
                                         </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -599,25 +623,35 @@ if qFourAns != 3:
                             <div class='row gy-2'>
                                 <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
-                                        <h4 id='controlstruct'>Control Structures</h4>
-
-                                        <p class='explain'>Control Structures control the other that lines of code are evaluated in.</p>
+                                        
                                         <p class='explain'>
+
+                                            <h4 id='controlstruct'>Control Structures</h4>
+
+                                            Control Structures control the other that lines of code are evaluated in.
+
                                             <ul>
-                                                <li>Fixed Loop - Loop code a predetermined number of times, e.g <code class='lang-python'>for i in range(4): // Do something</code></li>
-                                                <li>Conditional Loop - Only loops as long as the condition is true, e.g <code class='lang-python'>while pWord != 'password': // do something</code></li>
+                                                <li>Fixed Loop - Loop code a predetermined number of times, e.g <code class='lang-python'>for i in range(4): # Do something</code></li>
+                                                <li>Conditional Loop - Only loops as long as the condition is true, e.g <code class='lang-python'>while pWord != 'password': # do something</code></li>
                                             </ul>
-                                        </p>
 
-                                        <hr>
+                                            <hr>
 
-                                        <h4 id='predfunc'>Predefined Functions</h4>
+                                            <h4 id='predfunc'>Predefined Functions</h4>
 
-                                        <p class='explain'>Predefined Functions is code that has already been written & performs an action, <b>returning</b> a value</p>
-                                        <p class='explain'>Procedures is code that has already been written and performs an action, <b>not</b> returning a value</p>
-                                        <p class='explain'>Procedures & functions are both examples of subprograms. They perform task(s) as part of a larger program</p>
-                                        <p class='explain'>Both procedures & functions sometimes require parameters, this is data that the subprogram requires in order to function</p>
-                                        <p class='explain'>
+                                            <ul>
+                                                <li>Function - Code that has already been written & performs an action, <b>returning</b> a value</li>
+                                                <li>Procedure - Code that has already been written and performs an action, <b>not</b> returning a value</li>
+                                            </ul>
+
+                                            Procedures & functions are both examples of subprograms. They perform task(s) as part of a larger programmable
+
+                                            <br>
+
+                                            Both procedures & functions sometimes require parameters, this is data that the subprogram requires in order to function
+
+                                            <br><br>
+
                                             Some Examples
                                             <ul>
                                                 <li>len (length) - Returns the number of characters in a string or items in an array</li>
@@ -625,39 +659,51 @@ if qFourAns != 3:
                                                 <li>random - Chooses a random element from a list</li>
                                                 <li>range - chooses a random element within a specified range</li>
                                             </ul>
-                                        </p>
 
-                                        <hr>
+                                            <hr>
 
-                                        <h4 id='algo'>Standard Algorithms</h4>
+                                            <h4 id='algo'>Standard Algorithms</h4>
 
-                                        <p class="explain">A standard algorithm is a programmable 'recipe' for doing certain tasks</p>
-                                        <p class="explain">At beginner level, these are
+                                            A standard algorithm is a programmable 'recipe' for doing certain tasks
+
+                                            <br><br>
+                                            At beginner level, these are
                                             <ul>
-                                                <li>Input Validation</li>
-                                                <li>Running Total within a loop</li>
-                                                <li>Traversing a 1D Array</li>
-                                            </ul>
-                                        </p>
+                                                <li>
+                                                    <details>
+                                                        <summary>Input Validation -  Making sure the Input given is acceptable</summary>
 
-                                        <p class="explain">Input Validation - Making sure the Input given is acceptable</p>
-                                        <pre style='width: 30vw'><code class='lang-python'>grade = int(input('Enter Percentage: '))
+                                                        <pre style='width: 30vw'><code class='lang-python'>grade = int(input('Enter Percentage: '))
 while grade < 0 or grade > 100: 
     grade = int(input('Error - Enter Percentage: '))</code></pre>
 
-                                        <p class="explain">Running Total within a loop - How far the loop has gone through</p>
-                                        <pre style="width: 30vw"><code class="lang-python">total = 0
+                                                    </details>
+                                                </li>
+
+                                                <li>
+                                                    <details>
+                                                        <summary>Running Total within a loop - How far the loop has gone through</summary>
+                                                        <pre style="width: 30vw"><code class="lang-python">total = 0
 points = [1,2,3,4,5,6]
 
 for i in range(len(points)):
     total += points[i]
 
 print(total)</code></pre>
+                                                    </details>
 
-                                        <p class="explain">Traversing a 1D Array - Running through all values in an array</p>
-                                        <pre style='width: 30vw'><code class='lang-python'>array = ["one", "two", "three", "four"]
+                                                </li>
+                                                <li>
+                                                    <details>
+                                                        <summary>Traversing a 1D Array - Running through all values in an array</summary>
+                                                        <pre style='width: 30vw'><code class='lang-python'>array = ["one", "two", "three", "four"]
 for i in range(len(array)):
     print(giant[i])</code></pre>
+                                                    </details>
+                                                </li>
+                                            </ul>
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -665,11 +711,16 @@ for i in range(len(array)):
                             <div class='row gy-2'>
                                 <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
-                                        <h4>Questions</h4>
-
+                                        
                                         <p class="explain">
+
+                                            <h4>Questions</h4>
+
                                             <ul>
-                                                <li></li>
+                                                <li><details><summary>Name 2 types of subprogram</summary>Function & Procedure</details></li>
+                                                <li><details><summary>What is the difference between a procedure & a function</summary>A procedure does not return a value & a function does return a value</details></li>
+                                                <li><details><summary>What is a predefined function</summary>A piece of code that can be ran and given information, returning a value as output</details></li>
+                                                <li><details><summary>What is a parameter</summary>Information required by a subprogram to operate</details></li>
                                             </ul>
                                         </p>
 
@@ -680,9 +731,671 @@ for i in range(len(array)):
                     </div>
                 </div>
 
+                <hr>
+
+                <div id='softwaredev-test-doc-eval'>
+                    <h3 data-aos='fade-up'>Testing, Documentation & Evaluation</h3>
+            
+                    <div id='test-navbar'>
+                        <div class='row'>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class='col-lg-8'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <h6>Testing</h6>
+                                    <li><a href='#testcase' class='custom-link' data-aos='fade-right'>- Test Cases</a></li>
+                                    <li><a href='#errortypes' class='custom-link' data-aos='fade-right'>- Error Types</a></li>
+                                    <li><a href='#testtables' class='custom-link' data-aos='fade-right'>- Test Tables</a></li>
+                                    <br>
+                                    <h6>Documentation</h6>
+                                    <li><a href='#guides' class='custom-link' data-aos='fade-right'>- Guides</a></li>
+                                    <br>
+                                    <h6>Evaluation</h6>
+                                    <li><a href='#howtoeval' class='custom-link' data-aos='fade-right'>- How to Evaluate Work</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div id='testing'>
+                        <div class='row gy-5'>
+                            <div class='row gy-4'>
+                                <div class='col-12 mb-0' data-aos='fade-up' data-aos-delay='300'>
+                                    <div class='bg-base p-4 rounded-4 shadow-effect'>
+
+                                        <p class='explain'>
+
+                                            <h4>Testing</h4>
+
+                                            <br>
+                                        
+                                            <h5 id='testcase'>Test Cases</h5>
+
+                                            Testing software is an important step as it helps uncover bugs and errors that would otherwise not be found.
+                                            One way of doing this is test cases, this is where you test any inputs you give a program with 3 tiers. 
+
+                                            <br>
+                                            
+                                            Lets use the example of a score program that takes in a score between 0 and 50.
+                                            
+                                            <ul>
+                                                <li>Normal - Data that you would expect to work or be acceptable an that lies within the range, e.g 2, 45</li>
+                                                <li>Extreme - Data at the lower and upper limits of the range, e.g 0, 50</li>
+                                                <li>Exceptional - Data that should not be accepted by the program, e.g -7, 'String'</li>
+                                            </ul>
+
+                                            <hr>
+
+                                            <h5 id='errortypes'>Error Types</h5>
+
+                                            There are different error types in computing, each one points to different faults in the code, below are the main 3 at this level
+
+                                            <ul>
+                                                <li>
+                                                    Syntax Error - Occurs when the rules of the programming language are broken, e.g 
+                                                    <code class='lang-python'>prints(len(name)) # instead of print(len(name))</code>
+                                                </li>
+                                                <li>Execution Error - Occurs whilst the program is running, e.g <code class='lang-python'>res = 5/0</code></li>
+                                                <li>Logic Error - Occurs when mistakes are made in the design of the program, the program will run but won't give the expected output</li>
+                                            </ul>
+
+                                            <hr>
+
+                                            <h5 id='testtables'>Test Tables</h5>
+
+                                            Test Tables are used to lay out testing data to give a visual depiction of any problems, for example
+
+                                            <br><br>
+
+                                            <table>
+
+                                                <h6>Test Table - Accepting input of a score between 1 and 99 inclusive</h6>
+
+                                                <tr align='middle'>
+                                                    <th scope='col'>Category</th>
+                                                    <th scope='col'>Test Data</th>
+                                                    <th scope='col'>Expected</th>
+                                                    <th scope='col'>Pass</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Normal</td>
+                                                    <td>19</td>
+                                                    <td>Accepted</td>
+                                                    <td>🗸</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Normal</td>
+                                                    <td>67</td>
+                                                    <td>Accepted</td>
+                                                    <td>🗸</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Extreme</td>
+                                                    <td>1</td>
+                                                    <td>Accepted</td>
+                                                    <td>🗸</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Extreme</td>
+                                                    <td>99</td>
+                                                    <td>Accepted</td>
+                                                    <td>🗸</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Exceptional</td>
+                                                    <td>0</td>
+                                                    <td>Rejected</td>
+                                                    <td>🗸</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class='failed'>Exceptional</td>
+                                                    <td class='failed'>100</td>
+                                                    <td class='failed'>Rejected</td>
+                                                    <td class='failed'>X</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Exceptional</td>
+                                                    <td>yesterday</td>
+                                                    <td>Rejected</td>
+                                                    <td>🗸</td>
+                                                </tr>
+
+                                            </table>
+
+                                            <hr>
+
+                                            <h4>Documentation</h4>
+
+                                            <h6 id='guides'>Guides</h6>
+
+                                            There are many different types of documentation for software and hardware, but for our purposes only 2 will be described
+
+                                            <ul>
+                                                <li>User Guide - How the user can use the software effectively</li>
+                                                <li>Technical Guide - Requirements for the system, either hardware or software</li>
+                                            </ul>
+
+                                            <hr>
+
+                                            <h4>Evaluation</h4>
+
+                                            <h5 id='howtoeval'>How to Evaluate Work</h5>
+
+                                            Evaluation is to check the final program against the software specification made during the analysis stage.
+
+                                            <br>
+                                            Evaluation falls into 5 main sections
+
+                                            <ul>
+                                                <li>Fitness for Purpose - Does the program perform as specified in the software specification</li>
+                                                <li>Code Efficiency - Has made use of the correct control structures and computational constructs</li>
+                                                <li>Robustness - How well the program deals with unexpected inputs, usually determined at the testing stage</li>
+                                                <li>Readability - How easily the code is to read and understand, readability should include:</li>
+                                                <ul>
+                                                    <li>Internal Commentary (Comments)</li>
+                                                    <li>Meaningful Variable Names</li>
+                                                    <li>Indentation/White Space (Spaces or Tabs between code lines)</li>
+                                                </ul>
+                                            </ul>
+
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
             </div>
         </section>
-    </div>
+
+        <section id='webdev' class='full-height'>
+            <div class='container'>
+                <h1 class='text-brand'>WEB DEVELOPMENT</h1>
+                
+                <div id='webnav'>
+                    <div class="row">
+                        <h5 data-aos='fade-right'>Contents</h5>
+                        <div class="col-lg-8">
+
+                            <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                <h6>HTML</h6>
+                                <li><a href='#webdev-html-format' class='custom-link' data-aos='fade-up'>- Format</a></li>
+                                <li><a href='#webdev-html-body' class='custom-link' data-aos='fade-up'>- Text, Paragraphs, Sections & Breaks</a></li>
+                                <li><a href='#webdev-html-listsandlink' class='custom-link' data-aos='fade-up'>- Lists & Hyperlinks</a></li>
+                                <li><a href='#webdev-html-media' class='custom-link' data-aos='fade-up'>- Media & Images</a></li>
+                                <li><a href='#webdev-html-linktag' class='custom-link' data-aos='fade-up'>- Link Tag</a></li>
+                                <br>
+                                <h6>CSS</h6>
+                                <li><a href='#webdev-css-styling' class='custom-link' data-aos='fade-up'>- Text Styling</a></li>
+                                <li><a href='#webdev-css-selectors' class='custom-link' data-aos='fade-up'>- Selectors & Alignment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id='webdev-html-format'>
+                
+                    <h3 data-aos='fade-up' id='compsys-datarep'>Data Representation</h3>
+                
+                    <div id='-navbar'>
+                        <div class="row">
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class="col-lg-8">
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#' class='custom-link' data-aos='fade-right'>- </a></li>
+                                    <li><a href='#' class='custom-link' data-aos='fade-right'>- </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <hr>
+                
+                    <div id=''>
+                        <div class="row gy-5">
+                
+                            <div class="row gy-4">
+                
+                                <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                
+                                        <p class='explain'>
+                                            <h4>Web Dev Section Coming Soon</h4>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <hr>
+
+            </div>
+        </section>
+
+        <section id='compsys' class='full-height'>
+            <div class="container">
+                <h1 class="text-brand">COMPUTER SYSTEMS</h1>
+          
+                <div id='compsysnav'>
+                    <div class="row">
+                        <h5 data-aos='fade-right'>Contents</h5>
+                        <div class="col-lg-8">
+
+                            <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                <li><a href='#compsys-datarep' class='custom-link' data-aos='fade-up'>- Data Representation</a></li>
+                                <li><a href='#compsys-graphics' class='custom-link' data-aos='fade-up'>- ASCII, Bitmapped & Vector Graphics</a></li>
+                                <li><a href='#compsys-arch' class='custom-link' data-aos='fade-up'>- Computer Architecture</a></li>
+                                <li><a href='#compsys-coderun' class='custom-link' data-aos='fade-up'>- Compiler & Interpreter</a></li>
+                                <li><a href='#compsys-cybersec' class='custom-link' data-aos='fade-up'>- Cyber Security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='compsys-datarep'>
+                
+                    <h3 data-aos='fade-up' id='compsys-datarep'>Data Representation</h3>
+                
+                    <div id='datarep-navbar'>
+                        <div class="row">
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class="col-lg-8">
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#binary' class='custom-link' data-aos='fade-right'>- Binary</a></li>
+                                    <li><a href='#floatpoint' class='custom-link' data-aos='fade-right'>- Floating Point</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <hr>
+                
+                    <div id='binary'>
+                        <div class="row gy-5">
+                
+                            <div class="row gy-4">
+                
+                                <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                                    <div class="bg-base p-4 rounded-4 shadow-effect">
+                
+                                        <p class='explain'>
+                                            <h4>Binary</h4>
+
+                                            Binary is how computers interpret information, binary is similar to our normal number counting, but instead of using base 10 (counting in 10s) binary uses base 2 (counting in 2s)
+
+                                            <br>
+                                            e.g
+
+                                            
+                                            <table>
+
+                                                <h6>Counting in Base 10</h6>
+
+                                                <tr align='middle'>
+                                                    <th scope='col'>1000s</th>
+                                                    <th scope='col'>100s</th>
+                                                    <th scope='col'>10s</th>
+                                                    <th scope='col'>1s</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>3</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>(5x1000)</td>
+                                                    <td>(1x100)</td>
+                                                    <td>(2x10)</td>
+                                                    <td>(3x1)</td>
+                                                </tr>
+
+                                                <tr><td>= 5123</td></tr>
+                                            </table>
+
+                                            vs Binary
+
+                                            <table>
+                                                <h6>Counting in Base 2</h6>
+
+                                                <tr align='middle'>
+                                                    <th scope='col'>128</th>
+                                                    <th scope='col'>64</th>
+                                                    <th scope='col'>32</th>
+                                                    <th scope='col'>16</th>
+                                                    <th scope='col'>8</th>
+                                                    <th scope='col'>4</th>
+                                                    <th scope='col'>2</th>
+                                                    <th scope='col'>1</th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>0</td>
+                                                    <td>64</td>
+                                                    <td>32</td>
+                                                    <td>16</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                </tr>
+
+                                                <tr><td>= 113</td></tr>
+
+                                            </table>
+
+                                            <hr>
+
+                                            <h4 id='floatpoint'>Floating Point Representation</h4>
+
+                                            Floating Point Representation is a bit different compared to binary, but the rules of math still apply
+
+                                            <br><br>
+                                            Lets take the number 0.314x10<sup>25</sup> for example
+
+                                            <br>
+
+                                            <ul>
+                                                <li>314 is referred to as the mantissa</li>
+                                                <li>25 is referred to as the exponent</li>
+                                                <li>and the x10 is referred to as the base</li>
+                                            </ul>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id='compsys-graphics'>
+                    <h3 data-aos='fade-up'>Graphics</h3>
+                
+                    <div id='graphic-navbar'>
+                        <div class='row'>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class='col-lg-8'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#ascii' class='custom-link' data-aos='fade-right'>- ASCII</a></li>
+                                    <li><a href='#bitmapped' class='custom-link' data-aos='fade-right'>- Bitmapped Graphics</a></li>
+                                    <li><a href='#vectors' class='custom-link' data-aos='fade-right'>- Vector Graphics</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div>
+                        <div class='row gy-5'>
+                             <div class='row gy-4'>
+                                 <div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
+                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                         <p class='explain'>
+                                            <h4 id='ascii'>ASCII</h4>
+                                            ASCII determines how a standard set of characters is stored and is text only, with no information on the size, font, color etc.
+                                            <br>
+                                            ASCII stores each character as 7 bits (or 8 bits with extended ASCII)
+
+                                            <hr>
+
+                                            <h4 id='bitmapped'>Bitmapped Graphics</h4>
+
+                                            Bitmapped Graphics use a grid of pixels to store an image, with each pixel having a set color palette.
+
+                                            <br>
+
+                                            How many colors can each bit store:
+                                            <ul>
+                                                <li>1: 2 colors</li>
+                                                <li>2: 4 colors</li>
+                                                <li>8: 256 colors</li>
+                                                <li>16: 65535 colors</li>
+                                                <li>24 (true color): 16777216 colors</li>
+                                            </ul>
+
+                                            <hr>
+
+                                            <h4 id='vectors'>Vector Graphics</h4>
+
+                                            Vector Graphics store shape objects and their attributes, these have some advantages 
+
+                                            <ul>
+                                                <li>No pixelation, independent of zoom</li>
+                                                <li>Shapes can be layered on top of each other</li>
+                                            </ul>
+
+                                            Vectors have a few attributes that can be changed, you should learn these
+
+                                            <ul>
+                                                <li>Fill Color</li>
+                                                <li>Line Color</li>
+                                                <li>Coordinates (position)</li>
+                                            </ul>
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div id='compsys-arch'>
+                    <h3 data-aos='fade-up' id='compsys-arch'>Computer Architecture</h3>
+                
+                    <div id='arch-navbar'>
+                        <div class='row'>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class='col-lg-8'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#basearch' class='custom-link' data-aos='fade-right'>- Basic Computer Architecture</a></li>
+                                    <li><a href='#ram' class='custom-link' data-aos='fade-right'>- RAM</a></li>
+                                    <li><a href='#processor' class='custom-link' data-aos='fade-right'>- Processor</a></li>
+                                    <li><a href='#fetchexeccycle' class='custom-link' data-aos='fade-right'>- Fetch-Execute Cycle</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div>
+                        <div class='row gy-5'>
+                             <div class='row gy-4'>
+                                 <div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
+                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                         <p class='explain'>
+                                             <h4 id='basearch'>Section Title</h4>
+                                             Computer Architecture has varied over the years as computers have gotten smaller and faster, but the same base premise is the same
+
+                                                                 
+                                            <div class="custom-card-image rounded-4">
+                                                <img class='rounded-4' src="./resources/basecomparch.png" alt="Computer Architecture Model" style='width: 50%; height: 50%;'>
+                                            </div>
+
+                                            <hr>
+
+                                            <h4 id='ram'>RAM</h4>
+
+                                            Random Access Memory (or RAM) stores programs and data whilst the computer is running
+                                            <br>
+                                            Below are some properties of RAM
+
+                                            <ul>
+                                                <li>Programs loaded from the Hard drive into RAM</li>
+                                                <li>RAM is faster to access than the Hard drive</li>
+                                                <li>Data is lost when the PC is turned off or loses power</li>
+                                            </ul>
+
+                                            <hr>
+
+                                            <h4 id='processor'>Processor</h4>
+
+                                            The Central Processing Unit (or CPU) does all the sorting, searching, calculating and decision making.
+                                            <br>
+                                            The control unit controls the order in which instructions are executed.
+                                            <br>
+                                            The Arithmetic & Logic Unit (or ALU) carries out calculations and decisions
+                                            <br>
+                                            Registers are mini storage devices on the CPU, Registers usually hold:
+                                            <ul>
+                                                <li>The data being processed</li>
+                                                <li>The instructions being run</li>
+                                                <li>Memory addresses that need to be accessed</li>
+                                            </ul>
+
+                                            <hr>
+
+                                            <h4 id='fetchexeccycle'>Fetch-Execute Cycle</h4>
+
+                                            The fetch-execute cycle is the steps in which the CPU takes to execute a set of instructions
+                                            <br>
+                                            For beginner level, you only need to know about the fetch request part.
+
+                                            <ol>
+                                                <li>Processor sets up address bus with required address</li>
+                                                <li>Processor activates the read line</li>
+                                                <li>Instruction transferred from memory to processor by using the data bus (fetch)</li>
+                                                <li>Instructions decoded then executed</li>
+                                            </ol>
+
+                                            Heres a visual depiction of this
+
+                                            <div class="custom-card-image rounded-4">
+                                                <img class='rounded-4' src="./resources/fetchexec.png" alt="Fetch-Execute Cycle Diagram" style='width: 50%; height: 50%;'>
+                                            </div>
+                                         </p>
+
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div id='compsys-coderun'>
+                    <h3 data-aos='fade-up'>Compilers & Interpreters</h3>
+                
+                    <div id='-navbar'>
+                        <div class='row'>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class='col-lg-8'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#translation' class='custom-link' data-aos='fade-right'>- Translation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id=''>
+                        <div class='row gy-5'>
+                             <div class='row gy-4'>
+                                 <div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
+                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                         <p class='explain'>
+                                             <h4 id='translation'>Translation</h4>
+                                             Computers don't naturally understand high level languages, so code has to be translated 
+                                             into machine code that the computer can understand, this can be done through 2 different ways
+                                             
+                                             <ul>
+                                                <li>Compiler - Compiles & runs all the code at once</li>
+                                                <ul>
+                                                    <li>The code runs very fast</li>
+                                                    <li>Machine code isn't easily edited once compiled</li>
+                                                </ul>
+                                                
+                                                <li>Interpreter - Compiles & runs code one line at a time</li>
+                                                <ul>
+                                                    <li>Can be used to easily find bugs</li>
+                                                    <li>The program runs slowly</li>
+                                                </ul>
+                                             </ul>
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+
+                <div id='compsys-cybersec'>
+                    <h3 data-aos='fade-up'>Cyber Security</h3>
+                
+                    <div id='-navbar'>
+                        <div class='row'>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class='col-lg-8'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#firewall' class='custom-link' data-aos='fade-right'>- Firewalls & Encryption</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    
+                    <div id='firewall'>
+                        <div class='row gy-5'>
+                             <div class='row gy-4'>
+                                 <div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
+                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                         <p class='explain'>
+                                             <h4 id='firewall'>Firewalls & Encryption</h4>
+                                             A firewall prevents unauthorised access to or from a private network
+                                             <br>
+                                             Encryption is the process of putting data into a 'code' to prevent it being seen by unauthorised users
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
 
     <footer class="py-5 px-lg-5">
       <div class="container">
