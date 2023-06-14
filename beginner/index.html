@@ -395,7 +395,7 @@ else: print('Student Failed')</code></pre>
 
                                             Breaking down a problem into smaller and smaller steps (subproblems) and is looked at from top down & left to right
 
-                                            <div class="custom-card-image rounded-4 pt-4 pb-4 w-50"><img class='rounded-4' src="./resources/struct-diagram.png" alt="Structure Diagram"></div>
+                                            <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/struct-diagram.png" alt="Structure Diagram"></div>
 
                                             Draw a structure diagram for the following problem
 
@@ -403,7 +403,7 @@ else: print('Student Failed')</code></pre>
 
                                             <details>
                                                 <summary>"I want a program that takes in 3 football scores, works out the total goals scored & the average, then outputs a message with the total & average"</summary>
-                                                <div class="custom-card-image rounded-4 w-50"><img class='rounded-4' src="./resources/q-struct-diagram.png" alt="Structure Diagram"></div>
+                                                <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/q-struct-diagram.png" alt="Structure Diagram"></div>
                                             </details>
 
                                             <hr>
@@ -413,8 +413,8 @@ else: print('Student Failed')</code></pre>
 
                                             Represents a set of instructions including the flow of the program. It has specific symbols for set actions
 
-                                            <div class="custom-card-image rounded-4 pt-4 pb-4 w-50"><img class='rounded-4' src="./resources/flowchart-symbols.png" alt="Structure Diagram"></div>
-                                            <div class="custom-card-image rounded-4 w-50"><img class='rounded-4' src="./resources/flowchart-diagram.png" alt="Structure Diagram"></div>
+                                            <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/flowchart-symbols.png" alt="Structure Diagram"></div>
+                                            <div class="custom-card-image rounded-4"><img class='rounded-4' src="./resources/flowchart-diagram.png" alt="Structure Diagram"></div>
 
                                             <hr>
 
@@ -432,7 +432,7 @@ SEND "Of Course It Is" TO DISPLAY</code></pre>
 
                                             A wireframe is a graphic design notation used to display how the ui of a program would look, including inputs, processes and outputs
     
-                                            <div class="custom-card-image rounded-4 pt-4 pb-4 w-50"><img class='rounded-4' src="./resources/wireframe-diagram.png" alt="Structure Diagram"></div>
+                                            <div class="custom-card-image rounded-4 pt-4 pb-4"><img class='rounded-4' src="./resources/wireframe-diagram.png" alt="Structure Diagram"></div>
                                         </p>
 
                                     </div>
@@ -946,10 +946,7 @@ for i in range(len(array)):
                             <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
                                 <h6>HTML</h6>
                                 <li><a href='#webdev-html-format' class='custom-link' data-aos='fade-up'>- Format</a></li>
-                                <li><a href='#webdev-html-body' class='custom-link' data-aos='fade-up'>- Text, Paragraphs, Sections & Breaks</a></li>
-                                <li><a href='#webdev-html-listsandlink' class='custom-link' data-aos='fade-up'>- Lists & Hyperlinks</a></li>
-                                <li><a href='#webdev-html-media' class='custom-link' data-aos='fade-up'>- Media & Images</a></li>
-                                <li><a href='#webdev-html-linktag' class='custom-link' data-aos='fade-up'>- Link Tag</a></li>
+                                <li><a href='#webdev-html-body' class='custom-link' data-aos='fade-up'>- HTML Tags</a></li>
                                 <br>
                                 <h6>CSS</h6>
                                 <li><a href='#webdev-css-styling' class='custom-link' data-aos='fade-up'>- Text Styling</a></li>
@@ -963,15 +960,15 @@ for i in range(len(array)):
 
                 <div id='webdev-html-format'>
                 
-                    <h3 data-aos='fade-up' id='compsys-datarep'>Data Representation</h3>
+                    <h3 data-aos='fade-up'>Format</h3>
                 
-                    <div id='-navbar'>
+                    <div id='webdev-html-format-navbar'>
                         <div class="row">
                             <h5 data-aos='fade-right'>Contents</h5>
                             <div class="col-lg-8">
                                 <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
-                                    <li><a href='#' class='custom-link' data-aos='fade-right'>- </a></li>
-                                    <li><a href='#' class='custom-link' data-aos='fade-right'>- </a></li>
+                                    <li><a href='#whatishtml' class='custom-link' data-aos='fade-right'>- What is HTML</a></li>
+                                    <li><a href='#pagestruct' class='custom-link' data-aos='fade-right'>- Page Structure</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -979,7 +976,7 @@ for i in range(len(array)):
                 
                     <hr>
                 
-                    <div id=''>
+                    <div>
                         <div class="row gy-5">
                 
                             <div class="row gy-4">
@@ -988,16 +985,234 @@ for i in range(len(array)):
                                     <div class="bg-base p-4 rounded-4 shadow-effect">
                 
                                         <p class='explain'>
-                                            <h4>Web Dev Section Coming Soon</h4>
-                                        </p>
+                                            <h4 id='whatishtml'>What is HTML</h4>
 
+                                            HTML stands for HyperText Markup Language and is the language used to structure web pages, 
+                                            HTML uses tags to give a page structure and the language is very resilient to errors. HTML however is <b>not</b> a programming language
+
+                                            <hr>
+
+                                            <h4 id='pagestruct'>Page Structure</h4>
+
+                                            HTML is laid out a specific way to show what each section does, below is a basic html page layout
+
+                                            <pre><code class='lang-html'>&lt;!DOCTYPE html&gt
+&lt;html&gt
+    &lt;head&gt
+        &lt;title&gtWebpage Title goes Here&lt;/title&gt
+    &lt;/head&gt
+
+    &lt;body&gt
+        Displayed Content Goes Here
+    &lt;/body&gt
+&lt;/html&gt</code></pre>
+
+                                            Lets explain what each tag represents
+
+                                            <ul>
+                                                <li>
+                                                    <code class='lang-html'>&lt;!DOCTYPE html&gt</code> and <code class='lang-html'>&lt;html&gt</code>
+                                                    - This tag tells the web browser what language you're using to structure the page. 
+                                                    This must always be at the top of the page
+                                                </li>
+                                                <li>
+                                                    <code class='lang-html'>&lt;head&gt</code>
+                                                    - This tag encompasses tags like the title, css, scripts & meta tags
+                                                </li>
+                                                <li>
+                                                    <code class='lang-html'>&lt;title&gt</code>
+                                                    - This tag will be the webpages title that shows up in the window tab of the browser
+                                                </li>
+                                                <li>
+                                                    <code class='lang-html'>&lt;body&gt</code>
+                                                    - This tag encompasses all viewable content on the webpage
+                                                </li>
+                                            </ul>
+
+                                            A little more about tags
+                                            <ul>
+                                                <li>All tags have to be surrounded like this: &lt;tagname&gt</li>
+                                                <li>All tags have to be opened and closed, the end tag is always shown with a /></li>
+                                                <li>All tags can be referred to as elements</li>
+                                            </ul>
+
+                                            This is the example of a paragraph element: <code class='lang-html'>&lt;p&gtParagraph&lt;/p&gt</code>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
                     </div>
                 </div>
 
+                <hr>
+
+                <div id='webdev-html-body'>
+                    <div class='row gy-5'>
+
+                        <h3 data-aos='fade-up'>Tags</h3>
+
+                        <div class='row'>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class='col-lg-8'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#texttags' class='custom-link' data-aos='fade-right'>- Text Tags</a></li>
+                                    <li><a href='#listtags' class='custom-link' data-aos='fade-right'>- Lists & Links</a></li>
+                                    <li><a href='#mediatags' class='custom-link' data-aos='fade-right'>- Media & Image Tags</a></li>
+                                    <li><a href='#sectiontags' class='custom-link' data-aos='fade-right'>- Section Tags</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class='row gy-4'>
+                            <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+            
+                                    <p class='explain'>
+                                        <h4 id='texttags'>Text Tags</h4>
+
+                                        Text Tags are used to show text on screen, there are many different types
+                                        
+                                        <ul>
+                                            <li><code class='lang-html'>&lt;p&gt</code> - Paragraph tag</li>
+                                            <li><code class='lang-html'>&lt;h1&gt</code> - Header tag, this tag can go all the way up to 6, the higher the number the smaller the header</li>
+                                            <li><code class='lang-html'>&lt;br&gt</code> - Break Tag, produces a line break in the text</li>
+                                            <li><code class='lang-html'>&lt;hr&gt</code> - Horizontal Line tag, produces a horizontal line that can break up text density</li>
+                                        </ul>
+
+                                        <hr>
+
+                                        <h4 id='#listtags'>List Tags</h4>
+
+                                        In HTML, there are 2 types of lists, unordered and ordered lists
+
+                                        <ul>
+                                            <li><code class='lang-html'>&lt;ul&gt</code> - Unordered list, a list with bullet points for each list item</li>
+                                            <li><code class='lang-html'>&lt;ol&gt</code> - Ordered List, a list with numbers for each list item</li>
+                                            <li><code class='lang-html'>&lt;li&gt</code> - List Item, used to make a new item within a list</li>
+                                        </ul>
+
+                                        Lists are a good way of breaking up long paragraphs into short and succinct bullet points
+
+                                        <br>
+
+                                        Within a website, you can link to other parts of your website or other websites altogether using the anchor tag.
+                                        This tag creates a hyperlink which you can click and navigate around.
+
+                                        <br>
+
+                                        There are 2 types of hyperlink
+
+                                        <ul>
+                                            <li>Internal Hyperlink - A hyperlink that takes you to another part of the same website</li>
+                                            <li>External Hyperlink - A hyperlink that takes you to another website</li>
+                                        </ul>
+
+                                        the anchor tag has an attribute called the hyperlink reference, or href for short. Below is how to structure an anchor tag
+
+                                        <br>
+                                        <code class='lang-html'>&lt;a href='https://www.google.com'&gtLink&lt;/a&gt</code>
+
+                                        There are 2 different ways to declare a link
+
+                                        <ul>
+                                            <li>Absolute Addressing - The entire domain and pathname are given to the href attribute</li>
+                                            <li>
+                                                Relative Addressing - Part of the domain and pathanme are given to the href attribute, 
+                                                relative addressing would only be used for internal links
+                                            </li>
+                                        </ul>
+
+                                        <hr>
+
+                                        <h4 id='mediatags'>Media Tags</h4>
+
+                                        Media Tags are used to embed videos, images and audio into a webpage
+
+                                        <ul>
+                                            <li>Image - <code class='lang-html'>&lt;img src='image.jpg'&gt</code></li>
+                                            <ul>
+                                                <li>Attributes</li>
+                                                <li>Alt - Alternative Text describing the image, displays if the image breaks</li>
+                                                <li>Height - sets the height of the image</li>
+                                                <li>Width - sets the width of the image</li>
+                                            </ul>
+                                            <li>Audio - <code class='lang-html'>&lt;audio src='audio.mp3' controls&gt&lt;/audio&gt</code></li>
+                                            <li>Video - <code class='lang-html'>&lt;video src='video.mp4' controls&gt&lt;/video&gt</code></li>
+                                            <ul>
+                                                <li>Attributes</li>
+                                                <li>Controls - Displays playback controls</li>
+                                                <li>Autoplay - Automatically starts playing once the page loads</li>
+                                                <li>Loop - loops the media</li>
+                                                <li>Volume - How loud the media is</li>
+                                            </ul>
+                                        </ul>
+
+                                        <hr>
+
+                                        <h4 id='sectiontags'>Section Tag</h4>
+
+                                        A section tag is used to group blocks of text together and is mainly used for styling specific sections of text
+                                        <code class='lang-html'>&lt;section&gt</code>
+
+                                        <br>
+
+                                        <h4 id='linktag'>Link Tag</h4>
+
+                                        A link tag is used to link other external files to the webpage, usually css
+                                        <br>
+                                        <code class='lang-html'>&lt;link rel='stylesheet' href='style.css' type='text/css'&gt</code>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id='webdev-css-styling'>
+                    <h3 data-aos='fade-up' id=''>CSS</h3>
+                
+                    <div id='css-navbar'>
+                        <div class='row'>
+                            <h5 data-aos='fade-right'>Contents</h5>
+                            <div class='col-lg-8'>
+                                <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                    <li><a href='#' class='custom-link' data-aos='fade-right'>- Section</a></li>
+                                    <li><a href='#' class='custom-link' data-aos='fade-right'>- Section</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <hr>
+
+                    <div id=''>
+                        <div class='row gy-5'>
+                             <div class='row gy-4'>
+                                 <div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
+                                     <div class='bg-base p-4 rounded-4 shadow-effect'>
+                                         <p class='explain'>
+                                             <h4>CSS Rules</h4>
+
+                                             Cascading Style Sheets (or CSS for short) helps format the appearance of webpages. These CSS files can be applied
+                                             to multiple pages in a site or they can only affect a single page.
+
+                                             <br>
+
+
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <hr>
 
             </div>
@@ -1259,7 +1474,7 @@ for i in range(len(array)):
 
                                                                  
                                             <div class="custom-card-image rounded-4">
-                                                <img class='rounded-4 w-50' src="./resources/basecomparch.png" alt="Computer Architecture Model">
+                                                <img class='rounded-4' src="./resources/basecomparch.png" alt="Computer Architecture Model">
                                             </div>
 
                                             <hr>
@@ -1311,7 +1526,7 @@ for i in range(len(array)):
                                             Heres a visual depiction of this
 
                                             <div class="custom-card-image rounded-4">
-                                                <img class='rounded-4 w-50' src="./resources/fetchexec.png" alt="Fetch-Execute Cycle Diagram">
+                                                <img class='rounded-4' src="./resources/fetchexec.png" alt="Fetch-Execute Cycle Diagram">
                                             </div>
                                          </p>
 
