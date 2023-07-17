@@ -29,7 +29,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
-            <li class="nav-item"><a class="nav-link active" href="#softwaredev">Software Development</a></li>
+            <li class="nav-item"><a class="nav-link" href="#softwaredev">Software Development</a></li>
             <li class="nav-item"><a class="nav-link" href="#webdev">Web Design</a></li>
             <li class="nav-item"><a class="nav-link" href="#compsys">Computer Systems</a></li>
           </ul>
@@ -1003,7 +1003,7 @@ for i in range(len(array)):
     &lt;/head&gt
 
     &lt;body&gt
-        Displayed Content Goes Here
+        &lt;!-- Displayed Content Goes Here --&gt
     &lt;/body&gt
 &lt;/html&gt</code></pre>
 
@@ -1182,8 +1182,7 @@ for i in range(len(array)):
                             <h5 data-aos='fade-right'>Contents</h5>
                             <div class='col-lg-8'>
                                 <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
-                                    <li><a href='#' class='custom-link' data-aos='fade-right'>- Section</a></li>
-                                    <li><a href='#' class='custom-link' data-aos='fade-right'>- Section</a></li>
+                                    <li><a href='#cssrules' class='custom-link' data-aos='fade-right'>- Rules</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1191,20 +1190,44 @@ for i in range(len(array)):
                     
                     <hr>
 
-                    <div id=''>
+                    <div id='cssrules'>
                         <div class='row gy-5'>
                              <div class='row gy-4'>
                                  <div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
                                      <div class='bg-base p-4 rounded-4 shadow-effect'>
                                          <p class='explain'>
-                                             <h4>CSS Rules</h4>
+                                             <h4 id='cssrules'>CSS Rules</h4>
 
                                              Cascading Style Sheets (or CSS for short) helps format the appearance of webpages. These CSS files can be applied
                                              to multiple pages in a site or they can only affect a single page.
 
                                              <br>
 
+                                             CSS structures its code like so
 
+                                             <ul>
+                                                <li>Selector - This declares which HTML elements are to be styled, this can be an element, class or ID</li>
+                                                <li>Property - This is the CSS property that is going to be edited, e.g text color</li>
+                                                <li>Value - This is the value you assign to the corresponding CSS property</li>
+                                                <li>A declaration requires a valid property value pair, a rule may contain multiple of these declarations</li>
+                                             </ul>
+
+                                             For example: <code class='lang-css'>h1 { color: blue; font-size: 12px; }</code>
+                                             <ul>
+                                                <li>h1 - This is the selector</li>
+                                                <li>color - This is the property</li>
+                                                <li>blue - This is the value</li>
+                                                <li>color: blue; - This is a declaration</li>
+                                             </ul>
+
+                                             At beginner, you're expected to be able to use the following CSS properties
+                                             <ul>
+                                                <li>Text: font (font-family, font-size)</li>
+                                                <li>Color & Background Color</li>
+                                                <li>Alignment (left, right, centre or justified)</li>
+                                             </ul>
+
+                                            That's all you need to know for beginner level css
                                          </p>
                                      </div>
                                  </div>
@@ -1212,9 +1235,6 @@ for i in range(len(array)):
                         </div>
                     </div>
                 </div>
-                
-                <hr>
-
             </div>
         </section>
 
