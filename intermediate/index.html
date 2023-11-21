@@ -37,7 +37,23 @@
 
     <main id="content-wrapper">
 
-        <section id='softwaredev' class='full-height'>
+        <section class='full-height'>
+            <div class='container'>
+                
+                <div>
+                    <div class='row gy-5'>
+                        <div class='col-12 mb-4 bg-base p-4 rounded-4 shadow-effect'>
+                            <h1 class='text-brand'>UNDER CONSTRUCTION</h1>
+                            <h5 data-aos='fade-right'>This page is under construction, please be patient whilst all the necessary work is created!</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <section id='softwaredev' class='full-height'>
             <div class="container">
                 <h1 class="text-brand">SOFTWARE DEVELOPMENT</h1>
             
@@ -931,6 +947,295 @@
             
             </div>
         </section>
+
+        <section id='webdev' class='quarter-height'>
+            <div class='container'>
+
+                <h1 class='text-brand'>WEB DESIGN</h1>
+                <p>Still Under Construction!</p>
+
+            </div>
+        </section>
+        
+        <section id='compsys' class='full-height'>
+            <div class='container'>
+                <h1 class='text-brand'>COMPUTER SYSTEMS</h1>
+
+                <div id='compsysnav'>
+                    <div class="row">
+                    <h5 data-aos='fade-right'>Contents</h5>
+                    <div class="col-lg-8">
+
+                        <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                            <li><a href='#datarep' class='custom-link' data-aos='fade-up'>- Data Representation</a></li>
+                            <li><a href='#arch' class='custom-link' data-aos='fade-up'>- Computer Architecture</a></li>
+                            <li><a href='#env' class='custom-link' data-aos='fade-up'>- Environmental Impact</a></li>
+                            <li><a href='#cybersec' class='custom-link' data-aos='fade-up'>- Cyber Security</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div>
+                    <div class='container'>
+
+                        <h3 data-aos='fade-up' id='datarep'>Data Representation</h3>
+                
+                        <div id='datarep-navbar'>
+                            <div class="row">
+                                <h5 data-aos='fade-right'>Contents</h5>
+                                <div class="col-lg-8">
+                                    <ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+                                        <li><a href='#intrep' class='custom-link' data-aos='fade-right'>- Two's Complement</a></li>
+                                        <li><a href='#floatrep' class='custom-link' data-aos='fade-right'>- Floating Point Representation</a></li>
+                                        <li><a href='#unicode' class='custom-link' data-aos='fade-right'>- Unicode</a></li>
+                                        <li><a href='#bitgraph' class='custom-link' data-aos='fade-right'>- Bitmapped Graphics</a></li>
+                                        <li><a href='#vecgraph' class='custom-link' data-aos='fade-right'>- Vector Graphics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <hr>
+                    
+                        <div>
+                            <div class="row gy-5">
+                    
+                                <div class="row gy-4">
+                    
+                                    <div class="col-12 mb-4" data-aos='fade-up' data-aos-delay='600'>
+                                        <div class="bg-base p-4 rounded-4 shadow-effect">
+                    
+                                            <p class='explain'>
+                    
+                                                <h4 id='intrep'>Two's Complement</h4>
+                        
+                                                In computers, data is represented in a different format: bits. A string of bits is used to encode different types
+                                                of information inside a computer. The most commonly stored data type is numbers.
+                                                
+                                                <br><br>
+
+                                                Using something called Two's Complement, you can turn a string of bits back into a number after it has been encoded.
+                                                The Two's Complement you will meet will only deal with a string of 8 bits so that's all we'll cover.
+
+                                                <br><br>
+                                                Let's use an example to explain how to use Two's Complement
+
+                                                <br>
+
+                                                Let's say we're given a string of bits, <span class='text-brand'>11000001</span>
+
+                                                <br>
+
+                                                Step 1 - Write out the denary numbers that correspond to the specific bit like below
+
+												<table class='mt-1 mb-1'>
+													<tr align='middle'>
+														<th scope='col'>(-)128</th>
+														<th scope='col'>64</th>
+														<th scope='col'>32</th>
+														<th scope='col'>16</th>
+														<th scope='col'>8</th>
+														<th scope='col'>4</th>
+														<th scope='col'>2</th>
+														<th scope='col'>1</th>
+													</tr>
+												</table>
+                        
+												Step 2 - List out your binary string and match them up
+
+												<table class='mt-1 mb-1'>
+													<tr align='middle'>
+														<th scope='col'>(-)128</th>
+														<th scope='col'>64</th>
+														<th scope='col'>32</th>
+														<th scope='col'>16</th>
+														<th scope='col'>8</th>
+														<th scope='col'>4</th>
+														<th scope='col'>2</th>
+														<th scope='col'>1</th>
+													</tr>
+													<tr align='middle'>
+														<td>1</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>1</td>
+													</tr>
+												</table>
+
+												Step 3 - Add all the numbers with a 1 underneath them (the 8th bit is always negative)
+
+												<table class='mt-1 mb-1'>
+													<tr align='middle'>
+														<th scope='col'>(-)128</th>
+														<th scope='col'>64</th>
+														<th scope='col'>32</th>
+														<th scope='col'>16</th>
+														<th scope='col'>8</th>
+														<th scope='col'>4</th>
+														<th scope='col'>2</th>
+														<th scope='col'>1</th>
+													</tr>
+													<tr align='middle'>
+														<td>1</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<td>-128</td>
+														<td>+64</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>+1</td>
+													</tr>
+												</table>
+
+												Step 4 - Evaluate all the numbers, the total should be <span class='text-brand'>-63</span>
+												<br>
+												In this example, the 8th bit (128) is called the <span class='text-brand'>signed bit</span>.
+												It tells the computer that this number is supposed to be negative. When using Two's Complement
+												at any length, the last bit on the leftmost side is always negative.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+								<div class='row'>
+									<div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
+										<div class='bg-base p-4 rounded-4 shadow-effect'>
+											<p class='explain'>
+												<h3 id='floatrep'>Floating Point Representation</h3>
+
+												Computers can store a lot of data as binary, however floating point numbers become difficult to due to their decimal nature.
+												<br>
+												So people developed a different way of representing them. <span class='text-brand'>mxb<sup>e</sup></span>
+												<br>
+												What does each symbol mean?<br>
+												m - Mantissa (This is the number to power to)<br>
+												b - Base, Whatever base is being used, typically 2<br>
+												e - Exponent, the number to raise the mantissa to
+
+												<br><br>
+												Each part is stored separately in binary form, the mantissa gets 15 bits, the exponent gets 8 bits,
+												the base is 2 and there's another bit to indicate negativity.
+												<br>
+												So for example, the number <span class='text-brand'>-101.00011</span> can be represented as
+
+												<table class='mt-1 mb-1'>
+													<tr align='middle'>
+														<th>Floating Point</th>
+														<th>Sign</th>
+														<th>Mantissa</th>
+														<th>Exponent</th>
+													</tr>
+													<tr align='middle'>
+														<td>-0.10100011x2<sup>11</sup></td>
+														<td>1</td>
+														<td>101000110000000</td>
+														<td>00000011</td>
+													</tr>
+												</table>
+
+												Through increasing the amount of bits the mantissa has, it increases the precision of the float<br>
+												and through increasing the amount of bits the exponent has, it increases the range of the float
+											</p>
+										</div>
+									</div>
+								</div>
+                    
+								<div class='row'>
+									<div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
+										<div class='bg-base p-4 rounded-4 shadow-effect'>
+											<p class='explain'>
+												<h3 id='unicode'>Unicode</h3>
+
+												Unicode is a way of encoding characters into bits, each character has a unique binary code.
+												However, Extended ASCII (which you should be familiar with) which does the same job as unicode, can only store
+												2<sup>8</sup> characters which is substantially smaller than unicode's 2<sup>16</sup> characters (that's 65,536!).
+												<br>
+												That's all you need to know about Unicode and ASCII however feel free to do external research into both.
+
+												<hr>
+
+												<h3 id='bitgraph'>Bitmapped Graphics</h3>
+
+												Bitmapped Graphics is a technique used to store images, they store every pixel necessary to represent an image, usually shown in a grid.
+												<br>
+												Bitmapped graphics are usually used to represent 'real-life' images because of their detail (or resolution which just means total number of pixels)
+												However, they have the downside of being difficult to edit once an image is taken.
+
+												<hr>
+
+												<h3 id='vecgraph'>Vector Graphics</h3>
+
+												Vector Graphics are similar to Bitmapped graphics, however vector graphics stores an image as a list of objects with attributes rather than pixels.<br>
+												This allows Vector Graphics to be scaled easily without losing quality and makes it much easier to edit individual objects in an image.<br>
+												However, Vector Graphics cannot represent 'real-life' images due to their simplicity.
+											</p>
+										</div>
+									</div>
+								</div>
+                    
+                            </div>                    
+                        </div>
+                    </div>
+                </div>
+
+				<hr>
+
+				<div>
+					<div class='container'>
+						<h3 data-aos='fade-up' id='arch'>Computer Architecture</h3>
+
+						<div id='arch-navbar'>
+							<div class='row'>
+								<h5 data-aos='fade-right'>Contents</h5>
+								<div class='col-lg-8'>
+									<ul class='dashes' data-aos='fade-right' data-aos-delay='100'>
+										<li><a href='#buses' class='custom-link' data-aos='fade-right'>- Buses</a></li>
+										<li><a href='#fec' class='custom-link' data-aos='fade-right'>- Fetch-Execute Cycle</a></li>
+										<li><a href='#' class='custom-link' data-aos='fade-right'>- </a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<hr>
+
+						<div class='row gy-5'>
+							<div class='row gy-4'>
+								<div class='col-12 mb-4' data-aos='fade-up' data-aos-delay='600'>
+									<div class='bg-base p-4 rounded-4 shadow-effect'>
+										
+										<p class='explain'>
+											<h3 id='#buses'></h3>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+
+            </div>
+        </section> -->
 
     </main>
 
